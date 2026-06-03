@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../providers/AuthProvider';
 import axiosClient from '../../lib/axiosClient';
-import { BookOpen, User, Calendar, Award, ChevronRight, Loader2, PlayCircle, Star } from 'lucide-react';
+import { BookOpen, User, Award, Loader2, PlayCircle } from 'lucide-react';
 
 export const CourseDetailsPage: React.FC = () => {
   const { id } = useParams();

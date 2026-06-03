@@ -4,7 +4,7 @@ import axiosClient from '../../lib/axiosClient';
 import { Shield, Users, BookOpen, Calendar, Mail, CheckCircle2, Loader2 } from 'lucide-react';
 
 export const AdminDashboard: React.FC = () => {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [stats, setStats] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 

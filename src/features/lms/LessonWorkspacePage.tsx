@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axiosClient from '../../lib/axiosClient';
-import { BookOpen, ChevronLeft, Loader2, PlayCircle, CheckCircle2, Award, ArrowRight } from 'lucide-react';
-import { sendResponse } from '../../../../backend/src/utils/response';
+import { ChevronLeft, Loader2, PlayCircle, CheckCircle2 } from 'lucide-react';
 
 export const LessonWorkspacePage: React.FC = () => {
   const { courseId, lessonId } = useParams();
-  const navigate = useNavigate();
+
   const [data, setData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isCompleting, setIsCompleting] = useState(false);

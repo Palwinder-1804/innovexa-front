@@ -13,12 +13,7 @@ import {
   Users,
   Building,
   GraduationCap,
-  Globe,
-  Layers,
-  ArrowUpRight,
-  Cpu,
-  MonitorPlay,
-  Share2
+  Globe
 } from 'lucide-react';
 
 const stats = [
@@ -97,7 +92,7 @@ const containerVariants = {
     opacity: 1,
     transition: { staggerChildren: 0.15 }
   }
-};
+} as const;
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -106,7 +101,7 @@ const itemVariants = {
     y: 0,
     transition: { type: 'spring', stiffness: 80, damping: 15 }
   }
-};
+} as const;
 
 export const LandingPage: React.FC = () => {
   return (

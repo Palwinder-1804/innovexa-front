@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axiosClient from '../../lib/axiosClient';
-import { BookOpen, Search, Loader2, User, Award, Clock, Star } from 'lucide-react';
+import { Search, Loader2, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../providers/AuthProvider';
 import axiosClient from '../../lib/axiosClient';
-import { Calendar, MessageSquare, PlusCircle, Loader2, Sparkles, CheckCircle2, MapPin, Clock } from 'lucide-react';
+import { Calendar, MessageSquare, PlusCircle, Loader2, MapPin, Clock } from 'lucide-react';
 
 export const CommunityWorkspacePage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();

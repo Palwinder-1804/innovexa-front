@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../providers/AuthProvider';
 import axiosClient from '../../lib/axiosClient';
-import { BookOpen, Users, BarChart3, Loader2, Sparkles, PlusCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { BookOpen, Users, BarChart3, Loader2, PlusCircle } from 'lucide-react';
+
 
 export const InstructorDashboard: React.FC = () => {
   const { user, logout } = useAuth();

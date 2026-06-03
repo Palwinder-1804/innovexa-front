@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../providers/AuthProvider';
 import axiosClient from '../../lib/axiosClient';
-import { Building, Calendar, PlusCircle, Clock, Loader2, FileText, CheckCircle2 } from 'lucide-react';
+import { Calendar, PlusCircle, Clock, Loader2, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const BusinessDashboard: React.FC = () => {
